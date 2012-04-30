@@ -1,0 +1,3 @@
+[submodule "v002-Utilities"]
+	path = v002-Utilities
+	url = git@github.com:vade/v002-Utilities.git

@@ -217,7 +217,7 @@
 				1BA22AF00FBFC7030059F731 /* v002Shader.m */,
 			);
 			name = "Helper Classes";
-			path = "../../Helper Classes";
+			path = "../v002-Utilities";
 			sourceTree = SOURCE_ROOT;
 		};
 		1BA22AFB0FBFC71B0059F731 /* Lomo */ = {

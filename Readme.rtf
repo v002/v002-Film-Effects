@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1440\margr1440\vieww15800\viewh14040\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs20 \cf0 \ul \ulc0 \
+v002 Film Effects 1.0.3 Readme:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\b0 \cf0 \ulnone 		\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 	v002 Film Effects brings emulation of classic film looks to Quartz Composer. Add vignetting, emulate the classic black and diffused white look, Technicolor 1, 2, 3  additive/subtractive film strip process emulation, the bleach bypass look and use lomography inspired filters in realtime.\
+\
+	Included effects:\
+		\
+		\'95 Bleach Bypass : Emulate the Bleach Bypass film treatment, think 'Saving Private Ryan'\
+		\'95 Light Leak: Emulate light prematurely exposing film due to poor construction of camera film backing\
+		\'95 Lomo: Recreates elements of the classic "lomography" look via configurable RGB lookup table\
+		\'95 LUT: Eases 32 but look up table creation with knee color and knee position\
+		\'95 Technicolor 1 : Technicolor System 1 emulation. 2 Strip additive process\
+		\'95 Technicolor 2 : Technicolor System 2 emulation. 2 Strip subtractive process\
+		\'95 Technicolor 3 : Technicolor System 3 emulation. 3 Strip subtractive process\
+		\'95 Vignette : A configurable film like vignette effect\
+		\'95 White Diffusion : Emulate classic Black and White film with diffused and blown out whites\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul License:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+
+\b0 \cf0 \ulnone \
+	{\field{\*\fldinst{HYPERLINK "http://v002.info/"}}{\fldrslt http://v002.info/}}\
+\
+	Copyright 2009-2012 vade / Anton Marini and bangnoise / Tom Butterworth\
+\
+	{\field{\*\fldinst{HYPERLINK "http://creativecommons.org/licenses/by-nc-sa/3.0/"}}{\fldrslt Creative Commons, Attribution - Non Commercial - Share Alike 3.0}}\
+	\
+	{\field{\*\fldinst{HYPERLINK "http://v002.info/licenses/"}}{\fldrslt Licensing details and interpretation}} for performers/programmers regarding the non commercial clause.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul Requirements:\
+	\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone 	Mac OS X 10.5 (Quartz Composer 3.0) or later\
+	\
+	Quartz Composer editor to edit compositions
+\b \ul \
+
+\b0 \ulnone \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul Installation:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone 		\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 	The plugin must be installed in the ~/Library/Graphics/Quartz Composer Plug-Ins/ folder. MacOS 10.7 and later hide the Library folder. To navigate to it, use the Go To Folder\'85 command in the Finder's Go menu.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 \ul Changelog:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ulnone \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 	1.0.3:	- Fix issue which affected drawing in unexpected ways\
+	\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 	1.0.2:	- Fix compatibility with issue \'93Color Matrix\'94 patch and friends\
+		- Fix color fidelity issues with Quartz Composer host applications rendering to output colorspaces other than GenericRGB/GenericRGBLinear\
+		- Fix potential incompatibility with host applications using Garbage Collection\
+		- Fix potential initialization issue\
+		- Fix potential dealloc issue\
+		- Remove unnecessary function calls.\
+\
+	1.0.1 	- Fix regression/bug with \'93Render In Image\'94 Macro support.\
+\
+	1.0 	- Initial Release\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\cf0 	THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.}

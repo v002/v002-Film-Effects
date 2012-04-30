@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		233E2C640A83C768005A62DF /* Build & Copy */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 233E2D890A83C7AC005A62DF /* Build configuration list for PBXAggregateTarget "Build & Copy" */;
+			buildPhases = (
+				233E2C690A83C783005A62DF /* ShellScript */,
+			);
+			dependencies = (
+				233E2C660A83C76D005A62DF /* PBXTargetDependency */,
+			);
+			name = "Build & Copy";
+			productName = "Build & Install";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		16BA95420A7EB2EB001E4983 /* v002FilmLomoPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* v002FilmLomoPlugIn.m */; };
+		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
+		1B12F8D010D6E56F00B30AE8 /* v002FilmLUTPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F8C510D6E56300B30AE8 /* v002FilmLUTPlugIn.m */; };
+		1BA22AF10FBFC7030059F731 /* v002FBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22AEC0FBFC7030059F731 /* v002FBO.m */; };
+		1BA22AF20FBFC7030059F731 /* v002MasterPluginInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22AEE0FBFC7030059F731 /* v002MasterPluginInterface.m */; };
+		1BA22AF30FBFC7030059F731 /* v002Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22AF00FBFC7030059F731 /* v002Shader.m */; };
+		1BA22AFE0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22AFD0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.m */; };
+		1BA22B180FBFCB4E0059F731 /* v002.film-whitediffusion.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22B160FBFCB4E0059F731 /* v002.film-whitediffusion.frag */; };
+		1BA22B190FBFCB4E0059F731 /* v002.film-whitediffusion.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22B170FBFCB4E0059F731 /* v002.film-whitediffusion.vert */; };
+		1BA22B790FBFCCC70059F731 /* v002.film-technicolor1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22B740FBFCCC70059F731 /* v002.film-technicolor1.frag */; };
+		1BA22B7A0FBFCCC70059F731 /* v002.film-technicolor1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22B750FBFCCC70059F731 /* v002.film-technicolor1.vert */; };
+		1BA22B7B0FBFCCC70059F731 /* v002.film-technicolor2.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22B760FBFCCC70059F731 /* v002.film-technicolor2.frag */; };
+		1BA22B7C0FBFCCC70059F731 /* v002.film-technicolor2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22B770FBFCCC70059F731 /* v002.film-technicolor2.vert */; };
+		1BA22B7F0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22B7E0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.m */; };
+		1BA22BCE0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22BCD0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.m */; };
+		1BA22C0D0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22C0C0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.m */; };
+		1BA22C100FBFD5620059F731 /* v002.film-technicolor3.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22C0E0FBFD5620059F731 /* v002.film-technicolor3.frag */; };
+		1BA22C110FBFD5620059F731 /* v002.film-technicolor3.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22C0F0FBFD5620059F731 /* v002.film-technicolor3.vert */; };
+		1BA22C320FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA22C310FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.m */; };
+		1BA22E290FC08A9F0059F731 /* v002.film-bleachbypass.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22E270FC08A9F0059F731 /* v002.film-bleachbypass.vert */; };
+		1BA22E2A0FC08A9F0059F731 /* v002.film-bleachbypass.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA22E280FC08A9F0059F731 /* v002.film-bleachbypass.frag */; };
+		1BA42CC810CF773600577530 /* v002FilmVignettePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA42CC710CF773600577530 /* v002FilmVignettePlugin.m */; };
+		1BA42CD210CF78A600577530 /* v002.film-vignette.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA42CC910CF77E900577530 /* v002.film-vignette.vert */; };
+		1BA42CD310CF78A600577530 /* v002.film-vignette.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA42CCA10CF77F300577530 /* v002.film-vignette.frag */; };
+		1BA42E0D10D1430C00577530 /* v002FilmLightLeakPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA42E0C10D1430C00577530 /* v002FilmLightLeakPlugin.m */; };
+		1BA42E2410D1454400577530 /* v002.film-lightleak.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BA42E2110D1453000577530 /* v002.film-lightleak.vert */; };
+		1BA42E2510D1454400577530 /* v002.film-lightleak.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BA42E2310D1453C00577530 /* v002.film-lightleak.frag */; };
+		1BC414AD0E4AA12D00BA39DC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC414AC0E4AA12D00BA39DC /* OpenGL.framework */; };
+		1BC414FE0E4AA40700BA39DC /* v002.film-lomo.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1BC414960E4AA0FE00BA39DC /* v002.film-lomo.vert */; };
+		1BC414FF0E4AA40700BA39DC /* v002.film-lomo.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1BC414970E4AA0FF00BA39DC /* v002.film-lomo.frag */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		233E2C650A83C76D005A62DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = v002FilmLomo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		16AA5C440A7EEE7300888E31 /* v002FilmLomo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = v002FilmLomo_Prefix.pch; sourceTree = "<group>"; };
+		16BA95400A7EB2EB001E4983 /* v002FilmLomoPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = v002FilmLomoPlugIn.h; sourceTree = "<group>"; };
+		16BA95410A7EB2EB001E4983 /* v002FilmLomoPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = v002FilmLomoPlugIn.m; sourceTree = "<group>"; };
+		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		1B12F8C410D6E56300B30AE8 /* v002FilmLUTPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmLUTPlugIn.h; sourceTree = "<group>"; };
+		1B12F8C510D6E56300B30AE8 /* v002FilmLUTPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmLUTPlugIn.m; sourceTree = "<group>"; };
+		1BA22AEB0FBFC7030059F731 /* v002FBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FBO.h; sourceTree = "<group>"; };
+		1BA22AEC0FBFC7030059F731 /* v002FBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FBO.m; sourceTree = "<group>"; };
+		1BA22AED0FBFC7030059F731 /* v002MasterPluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002MasterPluginInterface.h; sourceTree = "<group>"; };
+		1BA22AEE0FBFC7030059F731 /* v002MasterPluginInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002MasterPluginInterface.m; sourceTree = "<group>"; };
+		1BA22AEF0FBFC7030059F731 /* v002Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002Shader.h; sourceTree = "<group>"; };
+		1BA22AF00FBFC7030059F731 /* v002Shader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002Shader.m; sourceTree = "<group>"; };
+		1BA22AFC0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmBleachBypassPlugin.h; sourceTree = "<group>"; };
+		1BA22AFD0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmBleachBypassPlugin.m; sourceTree = "<group>"; };
+		1BA22B160FBFCB4E0059F731 /* v002.film-whitediffusion.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-whitediffusion.frag"; sourceTree = "<group>"; };
+		1BA22B170FBFCB4E0059F731 /* v002.film-whitediffusion.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-whitediffusion.vert"; sourceTree = "<group>"; };
+		1BA22B740FBFCCC70059F731 /* v002.film-technicolor1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-technicolor1.frag"; sourceTree = "<group>"; };
+		1BA22B750FBFCCC70059F731 /* v002.film-technicolor1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-technicolor1.vert"; sourceTree = "<group>"; };
+		1BA22B760FBFCCC70059F731 /* v002.film-technicolor2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-technicolor2.frag"; sourceTree = "<group>"; };
+		1BA22B770FBFCCC70059F731 /* v002.film-technicolor2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-technicolor2.vert"; sourceTree = "<group>"; };
+		1BA22B7D0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmTechnicolor1Plugin.h; sourceTree = "<group>"; };
+		1BA22B7E0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmTechnicolor1Plugin.m; sourceTree = "<group>"; };
+		1BA22BCC0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmTechnicolor2Plugin.h; sourceTree = "<group>"; };
+		1BA22BCD0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmTechnicolor2Plugin.m; sourceTree = "<group>"; };
+		1BA22C0B0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmTechnicolor3Plugin.h; sourceTree = "<group>"; };
+		1BA22C0C0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmTechnicolor3Plugin.m; sourceTree = "<group>"; };
+		1BA22C0E0FBFD5620059F731 /* v002.film-technicolor3.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-technicolor3.frag"; sourceTree = "<group>"; };
+		1BA22C0F0FBFD5620059F731 /* v002.film-technicolor3.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-technicolor3.vert"; sourceTree = "<group>"; };
+		1BA22C300FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmWhiteDiffusionPlugIn.h; sourceTree = "<group>"; };
+		1BA22C310FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmWhiteDiffusionPlugIn.m; sourceTree = "<group>"; };
+		1BA22E270FC08A9F0059F731 /* v002.film-bleachbypass.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-bleachbypass.vert"; sourceTree = "<group>"; };
+		1BA22E280FC08A9F0059F731 /* v002.film-bleachbypass.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-bleachbypass.frag"; sourceTree = "<group>"; };
+		1BA42CC610CF773600577530 /* v002FilmVignettePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmVignettePlugin.h; sourceTree = "<group>"; };
+		1BA42CC710CF773600577530 /* v002FilmVignettePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmVignettePlugin.m; sourceTree = "<group>"; };
+		1BA42CC910CF77E900577530 /* v002.film-vignette.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "v002.film-vignette.vert"; sourceTree = "<group>"; };
+		1BA42CCA10CF77F300577530 /* v002.film-vignette.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "v002.film-vignette.frag"; sourceTree = "<group>"; };
+		1BA42E0B10D1430C00577530 /* v002FilmLightLeakPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v002FilmLightLeakPlugin.h; sourceTree = "<group>"; };
+		1BA42E0C10D1430C00577530 /* v002FilmLightLeakPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v002FilmLightLeakPlugin.m; sourceTree = "<group>"; };
+		1BA42E2110D1453000577530 /* v002.film-lightleak.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "v002.film-lightleak.vert"; sourceTree = "<group>"; };
+		1BA42E2310D1453C00577530 /* v002.film-lightleak.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "v002.film-lightleak.frag"; sourceTree = "<group>"; };
+		1BC414960E4AA0FE00BA39DC /* v002.film-lomo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-lomo.vert"; sourceTree = "<group>"; };
+		1BC414970E4AA0FF00BA39DC /* v002.film-lomo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-lomo.frag"; sourceTree = "<group>"; };
+		1BC414AC0E4AA12D00BA39DC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		8D5B49B6048680CD000E48DA /* v002FilmEffects.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = v002FilmEffects.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */,
+				1BC414AD0E4AA12D00BA39DC /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Quartz Composer Plug In */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = "Quartz Composer Plug In";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC414AC0E4AA12D00BA39DC /* OpenGL.framework */,
+				16BA96300A7EB9AC001E4983 /* Quartz.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				1BA22E270FC08A9F0059F731 /* v002.film-bleachbypass.vert */,
+				1BA22E280FC08A9F0059F731 /* v002.film-bleachbypass.frag */,
+				1BC414960E4AA0FE00BA39DC /* v002.film-lomo.vert */,
+				1BC414970E4AA0FF00BA39DC /* v002.film-lomo.frag */,
+				1BA22B160FBFCB4E0059F731 /* v002.film-whitediffusion.frag */,
+				1BA22B170FBFCB4E0059F731 /* v002.film-whitediffusion.vert */,
+				1BA22B740FBFCCC70059F731 /* v002.film-technicolor1.frag */,
+				1BA22B750FBFCCC70059F731 /* v002.film-technicolor1.vert */,
+				1BA22B760FBFCCC70059F731 /* v002.film-technicolor2.frag */,
+				1BA22B770FBFCCC70059F731 /* v002.film-technicolor2.vert */,
+				1BA22C0E0FBFD5620059F731 /* v002.film-technicolor3.frag */,
+				1BA22C0F0FBFD5620059F731 /* v002.film-technicolor3.vert */,
+				1BA42CC910CF77E900577530 /* v002.film-vignette.vert */,
+				1BA42CCA10CF77F300577530 /* v002.film-vignette.frag */,
+				1BA42E2110D1453000577530 /* v002.film-lightleak.vert */,
+				1BA42E2310D1453C00577530 /* v002.film-lightleak.frag */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BA22B060FBFC75A0059F731 /* BleachBypass */,
+				1BA42E0A10D142E000577530 /* Light Leak */,
+				1BA22AFB0FBFC71B0059F731 /* Lomo */,
+				1B12F8C310D6E55B00B30AE8 /* LUT */,
+				1BA22B150FBFCB330059F731 /* Technicolor */,
+				1BA42CBB10CF76AD00577530 /* Vignette */,
+				1BA22C330FBFD98B0059F731 /* WhiteDiffusion */,
+				1BA22AEA0FBFC7030059F731 /* Helper Classes */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* v002FilmEffects.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B12F8C310D6E55B00B30AE8 /* LUT */ = {
+			isa = PBXGroup;
+			children = (
+				1B12F8C410D6E56300B30AE8 /* v002FilmLUTPlugIn.h */,
+				1B12F8C510D6E56300B30AE8 /* v002FilmLUTPlugIn.m */,
+			);
+			name = LUT;
+			sourceTree = "<group>";
+		};
+		1BA22AEA0FBFC7030059F731 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BA22AEB0FBFC7030059F731 /* v002FBO.h */,
+				1BA22AEC0FBFC7030059F731 /* v002FBO.m */,
+				1BA22AED0FBFC7030059F731 /* v002MasterPluginInterface.h */,
+				1BA22AEE0FBFC7030059F731 /* v002MasterPluginInterface.m */,
+				1BA22AEF0FBFC7030059F731 /* v002Shader.h */,
+				1BA22AF00FBFC7030059F731 /* v002Shader.m */,
+			);
+			name = "Helper Classes";
+			path = "../../Helper Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		1BA22AFB0FBFC71B0059F731 /* Lomo */ = {
+			isa = PBXGroup;
+			children = (
+				16BA95400A7EB2EB001E4983 /* v002FilmLomoPlugIn.h */,
+				16BA95410A7EB2EB001E4983 /* v002FilmLomoPlugIn.m */,
+			);
+			name = Lomo;
+			sourceTree = "<group>";
+		};
+		1BA22B060FBFC75A0059F731 /* BleachBypass */ = {
+			isa = PBXGroup;
+			children = (
+				1BA22AFC0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.h */,
+				1BA22AFD0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.m */,
+			);
+			name = BleachBypass;
+			sourceTree = "<group>";
+		};
+		1BA22B150FBFCB330059F731 /* Technicolor */ = {
+			isa = PBXGroup;
+			children = (
+				1BA22B7D0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.h */,
+				1BA22B7E0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.m */,
+				1BA22BCC0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.h */,
+				1BA22BCD0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.m */,
+				1BA22C0B0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.h */,
+				1BA22C0C0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.m */,
+			);
+			name = Technicolor;
+			sourceTree = "<group>";
+		};
+		1BA22C330FBFD98B0059F731 /* WhiteDiffusion */ = {
+			isa = PBXGroup;
+			children = (
+				1BA22C300FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.h */,
+				1BA22C310FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.m */,
+			);
+			name = WhiteDiffusion;
+			sourceTree = "<group>";
+		};
+		1BA42CBB10CF76AD00577530 /* Vignette */ = {
+			isa = PBXGroup;
+			children = (
+				1BA42CC610CF773600577530 /* v002FilmVignettePlugin.h */,
+				1BA42CC710CF773600577530 /* v002FilmVignettePlugin.m */,
+			);
+			name = Vignette;
+			sourceTree = "<group>";
+		};
+		1BA42E0A10D142E000577530 /* Light Leak */ = {
+			isa = PBXGroup;
+			children = (
+				1BA42E0B10D1430C00577530 /* v002FilmLightLeakPlugin.h */,
+				1BA42E0C10D1430C00577530 /* v002FilmLightLeakPlugin.m */,
+			);
+			name = "Light Leak";
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				16AA5C440A7EEE7300888E31 /* v002FilmLomo_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* v002FilmEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "v002FilmEffects" */;
+			buildPhases = (
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				1BC415050E4AA40900BA39DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = v002FilmEffects;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "Quartz Composer Plug In";
+			productReference = 8D5B49B6048680CD000E48DA /* v002FilmEffects.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "v002FilmEffects" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Quartz Composer Plug In */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* v002FilmEffects */,
+				233E2C640A83C768005A62DF /* Build & Copy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BC415050E4AA40900BA39DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA42E2410D1454400577530 /* v002.film-lightleak.vert in Resources */,
+				1BA42E2510D1454400577530 /* v002.film-lightleak.frag in Resources */,
+				1BC414FE0E4AA40700BA39DC /* v002.film-lomo.vert in Resources */,
+				1BC414FF0E4AA40700BA39DC /* v002.film-lomo.frag in Resources */,
+				1BA22B180FBFCB4E0059F731 /* v002.film-whitediffusion.frag in Resources */,
+				1BA22B190FBFCB4E0059F731 /* v002.film-whitediffusion.vert in Resources */,
+				1BA22B790FBFCCC70059F731 /* v002.film-technicolor1.frag in Resources */,
+				1BA22B7A0FBFCCC70059F731 /* v002.film-technicolor1.vert in Resources */,
+				1BA22B7B0FBFCCC70059F731 /* v002.film-technicolor2.frag in Resources */,
+				1BA22B7C0FBFCCC70059F731 /* v002.film-technicolor2.vert in Resources */,
+				1BA22C100FBFD5620059F731 /* v002.film-technicolor3.frag in Resources */,
+				1BA22C110FBFD5620059F731 /* v002.film-technicolor3.vert in Resources */,
+				1BA22E290FC08A9F0059F731 /* v002.film-bleachbypass.vert in Resources */,
+				1BA22E2A0FC08A9F0059F731 /* v002.film-bleachbypass.frag in Resources */,
+				1BA42CD210CF78A600577530 /* v002.film-vignette.vert in Resources */,
+				1BA42CD310CF78A600577530 /* v002.film-vignette.frag in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233E2C690A83C783005A62DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/v002FilmEffects.plugin\"\ncp -rf \"$BUILT_PRODUCTS_DIR/v002FilmEffects.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16BA95420A7EB2EB001E4983 /* v002FilmLomoPlugIn.m in Sources */,
+				1B12F8D010D6E56F00B30AE8 /* v002FilmLUTPlugIn.m in Sources */,
+				1BA22AF10FBFC7030059F731 /* v002FBO.m in Sources */,
+				1BA22AF20FBFC7030059F731 /* v002MasterPluginInterface.m in Sources */,
+				1BA22AF30FBFC7030059F731 /* v002Shader.m in Sources */,
+				1BA22AFE0FBFC72D0059F731 /* v002FilmBleachBypassPlugin.m in Sources */,
+				1BA22B7F0FBFCD500059F731 /* v002FilmTechnicolor1Plugin.m in Sources */,
+				1BA22BCE0FBFCFE00059F731 /* v002FilmTechnicolor2Plugin.m in Sources */,
+				1BA22C0D0FBFD4DE0059F731 /* v002FilmTechnicolor3Plugin.m in Sources */,
+				1BA22C320FBFD96D0059F731 /* v002FilmWhiteDiffusionPlugIn.m in Sources */,
+				1BA42CC810CF773600577530 /* v002FilmVignettePlugin.m in Sources */,
+				1BA42E0D10D1430C00577530 /* v002FilmLightLeakPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		233E2C660A83C76D005A62DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5B49AC048680CD000E48DA /* v002FilmEffects */;
+			targetProxy = 233E2C650A83C76D005A62DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = v002FilmLomo_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = v002FilmEffects;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = v002FilmLomo_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = v002FilmEffects;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "V002_UNIQUE_CLASS_NAME_PREFIX=v002FilmEffects";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "V002_UNIQUE_CLASS_NAME_PREFIX=v002FilmEffects";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		233E2D8A0A83C7AC005A62DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Build & Install";
+			};
+			name = Debug;
+		};
+		233E2D8B0A83C7AC005A62DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Build & Install";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "v002FilmEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "v002FilmEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		233E2D890A83C7AC005A62DF /* Build configuration list for PBXAggregateTarget "Build & Copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233E2D8A0A83C7AC005A62DF /* Debug */,
+				233E2D8B0A83C7AC005A62DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

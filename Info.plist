@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>v002 Film Effects version 1.0.3 © 2009-2012 vade &amp; bangnoise</string>
+	<key>CFBundleIdentifier</key>
+	<string>info.vade.${PRODUCT_NAME:identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.03</string>
+	<key>CFBundleVersion</key>
+	<string>1.03</string>
+	<key>QCPlugInClasses</key>
+	<array>
+		<string>v002FilmLomoPlugIn</string>
+		<string>v002FilmVignettePlugin</string>
+		<string>v002FilmTechnicolor1Plugin</string>
+		<string>v002FilmTechnicolor2Plugin</string>
+		<string>v002FilmTechnicolor3Plugin</string>
+		<string>v002FilmBleachBypassPlugin</string>
+		<string>v002FilmWhiteDiffusionPlugIn</string>
+		<string>v002FilmLightLeakPlugIn</string>
+		<string>v002FilmLUTPlugIn</string>
+	</array>
+</dict>
+</plist>

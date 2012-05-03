@@ -113,7 +113,7 @@
 		1BC414960E4AA0FE00BA39DC /* v002.film-lomo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-lomo.vert"; sourceTree = "<group>"; };
 		1BC414970E4AA0FF00BA39DC /* v002.film-lomo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "v002.film-lomo.frag"; sourceTree = "<group>"; };
 		1BC414AC0E4AA12D00BA39DC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		8D5B49B6048680CD000E48DA /* v002FilmEffects.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = v002FilmEffects.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B6048680CD000E48DA /* v002 Film Effects.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "v002 Film Effects.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,7 +195,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* v002FilmEffects.plugin */,
+				8D5B49B6048680CD000E48DA /* v002 Film Effects.plugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 			name = "v002 Film Effects";
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "Quartz Composer Plug In";
-			productReference = 8D5B49B6048680CD000E48DA /* v002FilmEffects.plugin */;
+			productReference = 8D5B49B6048680CD000E48DA /* v002 Film Effects.plugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +316,7 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "v002FilmEffects" */;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "v002 Film Effects" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -427,7 +427,7 @@
 				GCC_PREFIX_HEADER = v002FilmLomo_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
-				PRODUCT_NAME = v002FilmEffects;
+				PRODUCT_NAME = "v002 Film Effects";
 				WRAPPER_EXTENSION = plugin;
 				ZERO_LINK = YES;
 			};
@@ -449,7 +449,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PRODUCT_NAME = v002FilmEffects;
+				PRODUCT_NAME = "v002 Film Effects";
 				WRAPPER_EXTENSION = plugin;
 			};
 			name = Release;
@@ -505,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "v002FilmEffects" */ = {
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "v002 Film Effects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,

@@ -1,3 +1,5 @@
+#define	kQCPlugIn_Category [NSArray arrayWithObjects:@"v002", @"v002 Film Effects", nil]
+
 #define v002_FBO_CLASS_NAME_REPLACE_ME v002FilmFBO
 #define v002_SHADER_CLASS_NAME_REPLACE_ME v002FilmShader
 #define v002_PLUGIN_CLASS_NAME_REPLACE_ME v002FilmMasterPluginInterface

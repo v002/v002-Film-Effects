@@ -11,7 +11,7 @@
 
 #import "v002FilmWhiteDiffusionPlugIn.h"
 
-#define	kQCPlugIn_Name				@"v002 Film: White Diffusion"
+#define	kQCPlugIn_Name				@"v002 White Diffusion"
 #define	kQCPlugIn_Description		@"Emulate classic clack and white film look with diffused and blown out whites."
 
 
@@ -33,7 +33,9 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 
 + (NSDictionary*) attributes
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey, nil];
+	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey,
+            [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey,
+            kQCPlugIn_Category, QCPlugInAttributeCategoriesKey, nil];
 }
 
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key

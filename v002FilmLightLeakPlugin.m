@@ -9,7 +9,7 @@
 #import <OpenGL/CGLMacro.h>
 #import "v002FilmLightLeakPlugin.h"
 
-#define	kQCPlugIn_Name				@"v002 Film: Light Leak"
+#define	kQCPlugIn_Name				@"v002 Light Leak"
 #define	kQCPlugIn_Description		@"Emulate light prematurely exposing film due to poor construction of camera film backing"
 
 
@@ -32,7 +32,9 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 
 + (NSDictionary*) attributes
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey, nil];
+	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey,
+            [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey,
+            kQCPlugIn_Category, QCPlugInAttributeCategoriesKey, nil];
 }
 
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key

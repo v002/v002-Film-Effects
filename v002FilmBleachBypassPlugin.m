@@ -11,7 +11,7 @@
 
 #import "v002FilmBleachBypassPlugin.h"
 
-#define	kQCPlugIn_Name				@"v002 Film: Bleach Bypass"
+#define	kQCPlugIn_Name				@"v002 Bleach Bypass"
 #define	kQCPlugIn_Description		@"Bleach Bypass film treatment emulation."
 
 
@@ -31,7 +31,9 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 
 + (NSDictionary*) attributes
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey, nil];
+	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey,
+            [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey,
+            kQCPlugIn_Category, QCPlugInAttributeCategoriesKey, nil];
 }
 
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key

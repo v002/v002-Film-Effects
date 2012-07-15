@@ -11,7 +11,7 @@
 
 #import "v002FilmLomoPlugIn.h"
 
-#define	kQCPlugIn_Name				@"v002 Film: Lomo"
+#define	kQCPlugIn_Name				@"v002 Lomo"
 #define	kQCPlugIn_Description		@"Recreates elements of the classic lomography look via configurable RGB lookup table"
 
 
@@ -29,7 +29,9 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 
 + (NSDictionary*) attributes
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey, nil];
+	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey,
+            [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey,
+            kQCPlugIn_Category, QCPlugInAttributeCategoriesKey, nil];
 }
 
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key

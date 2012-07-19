@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>v002 Film Effects version 1.0.3 © 2009-2012 vade &amp; bangnoise</string>
+	<string>v002 Film Effects version 1.0.3 © 2008-2012 vade &amp; bangnoise</string>
 	<key>CFBundleIdentifier</key>
 	<string>info.v002.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

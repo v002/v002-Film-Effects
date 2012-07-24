@@ -133,11 +133,12 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 	[pluginFBO pushFBO:cgl_ctx];
 	[pluginFBO attachFBO:cgl_ctx withTexture:tex width:bounds.size.width height:bounds.size.height];
 	
-	glClearColor(0.0, 0.0, 0.0, 0.0);
+	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);			
 	
 	glBegin(GL_QUADS);
 	glColor4f(0.0, 0.0, 0.0, 1.0);
+
 	glVertex2f(0, 0);
 	glVertex2f(0, height);
 
@@ -145,8 +146,8 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 	refColor = CGColorGetComponents(color);
 	
 	glColor4f(refColor[0], refColor[1], refColor[2], 1.0);
-	glVertex2f(kneePosition, 0);
 	glVertex2f(kneePosition, height);
+	glVertex2f(kneePosition, 0);
 	
 	glVertex2f(kneePosition, 0);
 	glVertex2f(kneePosition, height);
